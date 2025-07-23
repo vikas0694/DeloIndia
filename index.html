@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeloIndia - Your One-Stop Business Service Provider</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="DeloIndia offers comprehensive B2B and B2C services including finance, marketing, travel, construction, and home services.">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>DeloIndia</h1>
+                </div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Your One-Stop Solution for All Services</h1>
+                    <p>Comprehensive service solutions for businesses and individuals</p>
+                    <div class="hero-buttons">
+                        <a href="#services" class="btn btn-primary">Explore Services</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Services</h2>
+                    <p>Select a service category to learn more</p>
+                </div>
+
+                <div class="service-categories">
+                    <div class="service-card" data-category="finance">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Finance & Funding</h3>
+                        <p>Business loans, personal finance guidance</p>
+                    </div>
+
+                    <div class="service-card" data-category="marketing">
+                        <div class="service-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h3>Digital Marketing</h3>
+                        <p>Marketing services & business mentorship</p>
+                    </div>
+
+                    <div class="service-card" data-category="travel">
+                        <div class="service-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <h3>Tours & Travel</h3>
+                        <p>Domestic/international travel packages</p>
+                    </div>
+
+                    <div class="service-card" data-category="wholesale">
+                        <div class="service-icon">
+                            <i class="fas fa-boxes"></i>
+                        </div>
+                        <h3>Wholesale Goods</h3>
+                        <p>Supply chain solutions for businesses</p>
+                    </div>
+
+                    <div class="service-card" data-category="design">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>Interior & Exterior Design</h3>
+                        <p>Complete design solutions for all spaces</p>
+                    </div>
+
+                    <div class="service-card" data-category="construction">
+                        <div class="service-icon">
+                            <i class="fas fa-hard-hat"></i>
+                        </div>
+                        <h3>Construction Services</h3>
+                        <p>Building & renovation solutions</p>
+                    </div>
+
+                    <div class="service-card" data-category="automotive">
+                        <div class="service-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <h3>Automobile Services</h3>
+                        <p>Repair & maintenance solutions</p>
+                    </div>
+
+                    <div class="service-card" data-category="events">
+                        <div class="service-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h3>Event Management</h3>
+                        <p>Weddings, corporate events, parties</p>
+                    </div>
+
+                    <div class="service-card" data-category="home">
+                        <div class="service-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Home Services</h3>
+                        <p>Complete home maintenance solutions</p>
+                    </div>
+
+                    <div class="service-card" data-category="rental">
+                        <div class="service-icon">
+                            <i class="fas fa-key"></i>
+                        </div>
+                        <h3>Rental Services</h3>
+                        <p>Equipment, vehicle, property rentals</p>
+                    </div>
+                </div>
+
+                <!-- Service Detail Modal -->
+                <div id="service-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-modal">&times;</span>
+                        <h2 id="modal-title">Service Details</h2>
+                        <div id="modal-content"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2>About Us</h2>
+                    <p>Learn more about our mission and values</p>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="https://via.placeholder.com/600x400" alt="Team working together">
+                    </div>
+                    <div class="about-text">
+                        <h3>Our Story</h3>
+                        <p>MultiServe started with a simple vision: to create a one-stop platform where businesses and individuals can access a wide range of high-quality services under one roof.</p>
+                        
+                        <h3>Our Mission</h3>
+                        <p>To simplify service discovery and delivery by connecting customers with trusted service providers across multiple industries, ensuring quality, convenience, and satisfaction.</p>
+                        
+                        <h3>Our Vision</h3>
+                        <p>To become the leading service aggregator that bridges the gap between service providers and consumers, creating a seamless ecosystem that benefits all stakeholders.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2>What Our Clients Say</h2>
+                    <p>Hear from businesses and individuals who've experienced our services</p>
+                </div>
+
+                <div class="testimonial-container">
+                    <div class="testimonial-slider">
+                        <div class="testimonial-slide">
+                            <div class="testimonial-content">
+                                <div class="client-info">
+                                    <img src="https://via.placeholder.com/100" alt="Business Client" class="client-image">
+                                    <div>
+                                        <h4>John Smith</h4>
+                                        <p>CEO, Tech Solutions Inc.</p>
+                                    </div>
+                                </div>
+                                <p class="client-quote">"MultiServe's business funding and marketing services helped us scale our operations significantly. Their team understands the unique challenges faced by growing businesses."</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-slide">
+                            <div class="testimonial-content">
+                                <div class="client-info">
+                                    <img src="https://via.placeholder.com/100" alt="Individual Client" class="client-image">
+                                    <div>
+                                        <h4>Sarah Johnson</h4>
+                                        <p>Homeowner</p>
+                                    </div>
+                                </div>
+                                <p class="client-quote">"I've used MultiServe for home renovation, interior design, and regular cleaning services. The convenience of having all these services accessible through one platform is incredible!"</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-slide">
+                            <div class="testimonial-content">
+                                <div class="client-info">
+                                    <img src="https://via.placeholder.com/100" alt="Corporate Client" class="client-image">
+                                    <div>
+                                        <h4>Michael Brown</h4>
+                                        <p>Event Manager, Global Corp</p>
+                                    </div>
+                                </div>
+                                <p class="client-quote">"Their event management team orchestrated our annual corporate conference flawlessly. From venue selection to catering and technical setup, everything was handled professionally."</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-controls">
+                        <button id="prev-slide" class="slider-btn"><i class="fas fa-chevron-left"></i></button>
+                        <button id="next-slide" class="slider-btn"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Get In Touch</h2>
+                    <p>We're here to help with any questions you might have</p>
+                </div>
+
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>123 Business Avenue, Suite 200<br>New York, NY 10001</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>+1 (555) 123-4567<br>+1 (555) 987-6543</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>info@deloindia.com<br>support@deloindia.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Business Hours</h4>
+                                <p>Monday - Friday: 9AM - 6PM<br>Saturday: 10AM - 4PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" name="name" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" id="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group">
+                                <select name="service" id="service" required>
+                                    <option value="" disabled selected>Select Service</option>
+                                    <option value="finance">Finance & Funding</option>
+                                    <option value="marketing">Digital Marketing</option>
+                                    <option value="travel">Tours & Travel</option>
+                                    <option value="wholesale">Wholesale Goods</option>
+                                    <option value="design">Interior & Exterior Design</option>
+                                    <option value="construction">Construction Services</option>
+                                    <option value="automotive">Automobile Services</option>
+                                    <option value="events">Event Management</option>
+                                    <option value="home">Home Services</option>
+                                    <option value="rental">Rental Services</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Map Section -->
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.11976397304603!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1626321792369!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/15551234567" class="whatsapp-button" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>DeloIndia</h3>
+                    <p>Your comprehensive service provider for both businesses and individuals.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section services-list">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="#">Finance & Funding</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">Tours & Travel</a></li>
+                        <li><a href="#">Wholesale Goods</a></li>
+                        <li><a href="#">Interior & Exterior Design</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section services-list">
+                    <h3>More Services</h3>
+                    <ul>
+                        <li><a href="#">Construction Services</a></li>
+                        <li><a href="#">Automobile Services</a></li>
+                        <li><a href="#">Event Management</a></li>
+                        <li><a href="#">Home Services</a></li>
+                        <li><a href="#">Rental Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section newsletter">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <p>Stay updated with our latest services and offers.</p>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DeloIndia. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
